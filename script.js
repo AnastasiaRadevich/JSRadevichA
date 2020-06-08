@@ -143,15 +143,15 @@ let a = p / 4;
 
 /*let point = 0;
 
-let question1 = prompt('Вставить правильную букву - мыш_ а) - и, б) - ы, в) - е: ', '');
-let question2 = prompt('Вставить правильную букву - щ_ка а) - ы, б) - у, в) - ю: ', '');
-let question3 = prompt('Вставить правильную букву - ч_до а) - у, б) - ю, в) - и: ', '');
+let question1 = +prompt('Вставить правильную букву - мыш_ 1) - и, 2) - ы, 3) - е: ', '');
+let question2 = +prompt('Вставить правильную букву - щ_ка 1) - ы, 2) - у, 3) - ю: ', '');
+let question3 = +prompt('Вставить правильную букву - ч_до 1) - у, 2) - ю, 3) - и: ', '');
 
-    (question1 == 'а') ? point += 2 : point == 0;
-    (question1 == 'б') ? point += 2 : point == 0;
-    (question3 == 'а') ? point += 2 : point == 0;
+    (question1 === 1) ? point += 2 : null;
+    (question2 === 2) ? point += 2 : null;
+    (question3 === 1) ? point += 2 : null;
 
-    alert(`Вы набрали: ${point} баллов!`);*/
+    alert(`Ваш балл: ${point}!`);*/
 
 //----Задание 10----
 
