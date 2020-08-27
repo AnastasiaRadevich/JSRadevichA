@@ -1,5 +1,5 @@
-document.body.insertAdjacentHTML('beforeBegin', 
-'<div class = "container"><div class = "calendar"><div class = "month"><i class="fas fa-angle-left prev"></i><div class="date"><h1></h1><p></p></div><i class="fas fa-angle-right next"></i></div><div class="weekdays"><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div></div><div class="days"></div></div></div>');
+document.body.insertAdjacentHTML('beforeEnd', 
+'<div class = "container"><div class = "calendar"><div class = "month"><i class="fas fa-angle-left prev"></i><div class="date"><h1></h1><p></p></div><i class="fas fa-angle-right next"></i></div><div class="weekdays"><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div></div><div class="days"></div></div><div class = "weather"><div class = "location"><h1 class = "location-timezone"></h1></div><span class = "degree"><h2 class = "temperature-degree"></h2>&#176 C</span><div class = "temperature"><div class = "temperature-description"></div></div></div></div>');
 
 const date = new Date();
 
@@ -30,7 +30,6 @@ let days = '';
 const monthDays = document.querySelector('.days');
 const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
 const firstDayIndex = date.getDay();
-console.log(firstDayIndex);
 const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
 const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
 const nextDays = 7 - lastDayIndex;
